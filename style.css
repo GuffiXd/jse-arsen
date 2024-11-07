@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    font-family: "Roboto";
+    font-weight: 400;
+    /* жирность шрифта */
+    font-style: normal;
+    margin: 0;
+    /* внешние отступы */
+    padding: 0;
+    /* внутренние отступы */
+    box-sizing: border-box;
+    /* учитывать размеры внешнего и внутреннего пространства */
+}
+
+header {
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    /* равномерное выоавнимае по горизонтали */
+    align-items: center;
+    /* выравнивание по вертикали */
+    padding: 0 64px;
+    /* */
+}
+
+nav>ul {
+    display: flex;
+    /* выравнивание по горизонтали */
+    list-style: none;
+    /* убираем маркеры */
+    gap: 48px;
+    /* равномерный отступ между элементами */
+}
+
+nav>ul>li {
+    color: #230B59;
+}
+
+.buttons__header>button {
+    background: none;
+    border: none;
+    border: 2px solid #4840BB;
+    padding: 13px 21px;
+    border-radius: 6px;
+}
+
+.buttons__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.buttons__header>button:first-child {
+    color: #4840BB;
+}
+
+.buttons__header>button:last-child {
+    background: #4840BB;
+    color: white;
+}
+
+.banner {
+    padding: 0 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.banner>img {
+    flex: 50% 0 1;
+}
+
+.banner__desc {
+    flex: 50% 0 0;
+    display: flex;
+
+    flex-direction: column;
+    gap: 40px;
+}
+
+.banner__desc>h1 {
+    font-size: 50px;
+    line-height: 56px;
+    letter-spacing: 1.9px;
+    width: 352px;
+    color: #230B59;
+}
+
+.banner__desc>p {
+    font-size: 15px;
+    line-height: 21.6px;
+    color: #230B59;
+    width: 249px;
+}
+
+.banner__desc>button {
+    background: #4840BB;
+    width: 120px;
+    border: none;
+    border-radius: 6px;
+    padding: 11px 20px;
+    color: white;
+    font-size: 16px;
+
+}
+/* Основной стиль для секции */
+.info__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 64px;
+    background-color: white;
+    border-bottom: 2px solid white;
+}
+
+/* Стиль для каждого блока */
+.info__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+}
+
+/* Стиль для изображений логотипов */
+.info__box>img {
+    width: 133px;
+    height: 21px;
+    margin-bottom: 12px;
+}
+
+/* Стиль для основного текста */
+.info__box>p {
+    margin: 0;
+    font-size: 14px;
+    color: #230B59;
+}
+
+/* Стиль для крупного текста (например, 450K+ или $26B+) */
+.info__box>h2 {
+    margin: 0;
+    font-size: 27px;
+    color: #230B59;
+    ;
+}
+
+.star {
+    color: #230B59;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.text__section {
+    display: flex;
+    padding: 144px 162px;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-self:center;
+    gap:40px;
+    flex-direction: column;
+    flex: 50%;
+}
+
+.text__content{
+    max-width: 400;
+}
+
+.text__section>.text__content>h1 {
+    color: #230B59;
+    font-family: Roboto;
+font-size: 56px;
+font-weight: 400;
+
+
+}
+
+.text__section>.text__content>p {
+    font-family: Roboto;
+font-size: 17px;
+font-weight: 400;
+line-height: 21.6px;
+text-align: left;
+    color: #230B59;
+    margin: 0;
+    
+    
+}
+.start__learn {
+    margin: 40px;
+
+}
+.start {
+    padding: 10px 20px;
+  background-color: #4840BB;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.learn {
+    padding: 10px 20px;
+  background-color: transparent;
+  color:#4840BB;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.text__section>.text__content>.image__phone {
+    flex: 1;
+    width: 267px;
+height: 525px;
+top: 135px;
+gap: 0px;
+justify-content: center;
+position: relative;
+}
