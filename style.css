@@ -21,8 +21,15 @@ header {
     align-items: center;
     /* выравнивание по вертикали */
     padding: 0 64px;
+    z-index: 1;
+    position: fixed;   /* Закрепить элемент */
+    top: 0;            /* Расположить на верхней части экрана */
+    left: 0;           /* Расположить с левой стороны */
+    width: 100%;
+    background-color: white;
     /* */
 }
+
 
 nav>ul {
     display: flex;
@@ -51,16 +58,26 @@ nav>ul>li {
     gap: 12px;
 }
 
-.buttons__header>button:first-child {
+/* .buttons__header>button:first-child {
     color: #4840BB;
 }
 
 .buttons__header>button:last-child {
     background: #4840BB;
+    color: white; */
+/* } */
+.buttons__header>button:hover {
+    background: #4840BB;
     color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
 
+.buttons__header>button {
+    transition: all 0.5s ease;
+}
 .banner {
+    padding-top: 96px;
     padding: 0 64px;
     display: flex;
     align-items: center;
@@ -105,6 +122,7 @@ nav>ul>li {
     font-size: 16px;
 
 }
+
 /* Основной стиль для секции */
 .info__section {
     display: flex;
@@ -157,65 +175,129 @@ nav>ul>li {
     padding: 144px 162px;
     max-width: 1200px;
     justify-content: space-between;
-    align-self:center;
-    gap:40px;
+    align-self: center;
+    gap: 40px;
     flex-direction: column;
     flex: 50%;
+    position: relative;
 }
 
-.text__content{
+.text__content {
     max-width: 400;
 }
 
 .text__section>.text__content>h1 {
     color: #230B59;
     font-family: Roboto;
-font-size: 56px;
-font-weight: 400;
+    font-size: 56px;
+    font-weight: 400;
 
 
 }
 
 .text__section>.text__content>p {
     font-family: Roboto;
-font-size: 17px;
-font-weight: 400;
-line-height: 21.6px;
-text-align: left;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
     color: #230B59;
     margin: 0;
-    
-    
+
+
 }
+
 .start__learn {
     margin: 40px;
 
 }
+
 .start {
     padding: 10px 20px;
-  background-color: #4840BB;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
+    background-color: #4840BB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .learn {
     padding: 10px 20px;
-  background-color: transparent;
-  color:#4840BB;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
+    background-color: transparent;
+    color: #4840BB;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .text__section>.text__content>.image__phone {
-    flex: 1;
     width: 267px;
-height: 525px;
-top: 135px;
-gap: 0px;
-justify-content: center;
-position: relative;
+    height: 525px;
+    top: 135px;
+    gap: 0px;
+    justify-content: center;
+    position: absolute;
+}
+
+.for__pose {
+    height: 100vh;
+    background-color: #230B59;
+    position: relative;
+}
+
+.for__pose>div {
+    border: 2px solid black;
+}
+
+.for__pose>.for__pose1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 130px;
+    right: 170px;
+    z-index: 3;
+}
+
+.for__pose>.for__pose2 {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 220px;
+    right: 145px;
+    z-index: 2;
+}
+
+.for__pose>.for__pose3 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 320px;
+    right: 120px;
+    z-index: 1;
+}
+
+.for__borrow{
+    position: relative;
+}
+
+.for__borrow>div {
+    font-size: 13px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: -13px;
+    right: -13px;
 }
