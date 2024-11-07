@@ -174,21 +174,19 @@ nav>ul>li {
     display: flex;
     padding: 144px 162px;
     max-width: 1200px;
-    justify-content: space-between;
     align-self: center;
     gap: 40px;
-    flex-direction: column;
     flex: 50%;
     position: relative;
 }
 
 .text__content {
     max-width: 400;
+    
 }
 
 .text__section>.text__content>h1 {
     color: #230B59;
-    font-family: Roboto;
     font-size: 56px;
     font-weight: 400;
 
@@ -234,10 +232,9 @@ nav>ul>li {
 .text__section>.text__content>.image__phone {
     width: 267px;
     height: 525px;
-    top: 135px;
-    gap: 0px;
-    justify-content: center;
     position: absolute;
+    top: 135px;
+    right: 10px;
 }
 
 .for__pose {
